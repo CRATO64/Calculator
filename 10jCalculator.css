@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+  font-family: arial;
+}
+
+.div {
+  height: 50px;
+  width: 270px;
+  border-bottom: 2px solid white;
+  text-align: right;
+}
+
+.calculation {
+  color: white;
+  font-size: 45px;
+}
+
+.number {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  border: none;
+  font-size: 26px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.text {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  border: none;
+  font-size: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.operation {
+  background-color: rgb(254, 160, 10);
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  border: none;
+  font-size: 26px;
+  margin-right: 5px;
+  cursor: pointer;
+}

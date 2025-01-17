@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="10jCalculator.css">
+  </head>
+  <body>
+
+    <div class="div"><p class="js-button calculation"></p></div>
+
+    <p>
+      <button class="number" onclick="
+        updateCalculation('7');
+        submit();
+        ">
+        7
+      </button>
+ 
+      <button class="number" onclick="
+        updateCalculation('8');
+        submit();
+        ">
+        8
+      </button>
+ 
+      <button class="number" onclick="
+        updateCalculation('9');
+        submit();
+        ">
+        9
+      </button>
+ 
+      <button class="operation" onclick="
+       updateCalculation(' / ');
+       submit();
+        ">
+        /
+      </button>
+ 
+     </p>
+     
+    <p>
+      <button class="number" onclick="
+        updateCalculation('4');
+        submit();
+        ">
+        4
+      </button>
+ 
+      <button class="number" onclick="
+        updateCalculation('5');
+        submit();
+        ">
+        5
+      </button>
+ 
+      <button class="number" onclick="
+        updateCalculation('6');
+        submit();
+        ">
+        6
+      </button>
+ 
+      <button class="operation" onclick="
+        updateCalculation(' * ');
+        submit();
+        ">
+        *
+      </button>
+ 
+     </p>
+
+    <p>
+     <button class="number" onclick="
+      updateCalculation('1');
+      submit();
+       ">
+       1
+     </button>
+
+     <button class="number" onclick="
+        updateCalculation('2');
+        submit();
+       ">
+       2
+     </button>
+
+     <button class="number" onclick="
+       updateCalculation('3');
+       submit();
+       ">
+       3
+     </button>
+
+     <button class="operation" onclick="
+       updateCalculation(' - ');
+       submit();
+       ">
+       -
+     </button>
+
+    </p>
+
+    <p>
+
+     <button class="number" onclick="
+       updateCalculation('0');
+       submit();
+       ">
+       0
+     </button>
+
+     <button class="number" onclick="
+       updateCalculation('.');
+       submit();
+       ">
+       .
+     </button>
+
+     <button class="number" onclick="
+       eval(calculation);/*eval() makes strings into actual math */
+       calculation = eval(calculation);/* actual math puts into a container */
+       localStorage.setItem('calculation', calculation);
+       submit();
+       ">
+       =
+     </button>
+
+     <button class="operation" onclick="
+      updateCalculation(' + ');
+      submit();
+       ">
+       +
+     </button>
+
+    </p>
+
+    <p>
+
+    <button class="text" onclick="
+       calculation = '';
+       localStorage.setItem('calculation', calculation);
+       submit();
+       ">
+       Clear
+     </button>
+
+     <button class="text">
+      Remove
+     </button>
+
+    </p>
+
+    <script src="10jCalculator.js"></script>
+  </body>
+</html>
